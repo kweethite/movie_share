@@ -24,30 +24,39 @@
 <body>
 <div   class="container bg-light  text-center p-2" id="main_cn">
 <div class="alert alert-success">BMN telegram ကို join ရန် <a class=alert-link href="fb://group/436663261351812/?ref=share" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
-<span class="spinner-border text-success loader" id="loader"></span>
+<div class="alert alert-success">BMN FaceBook ကို join ရန် <a class=alert-link href="fb://group/436663261351812/?ref=share" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
 
-
-<div class="card d-none" id="main_box" >
-  <img src="" id="preview_image" class="card-img-top" alt="...">
-  <div class="card-body">
-   <h5 class="card-title" id="title"></h5>
-   <p class="card-text" id="about">
-      Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-       <a href="#" id="download" class="btn btn-primary">Download</a>
+    
+    <a href="#" id="download" class="btn btn-primary">Install BMN</a>
          <a href="#" id="open" class="btn btn-primary">Open In App</a>
 
-         
-   </div>
-<div class="alert alert-dark"> ဤနေရာတွင်ကြောညာများ ထည့်သွင်းရန် <a class="alert-link" href="mailto://thitethite080@gmail.com">နိပ်ပါ </a> </div>
-</div>
+    
 
-
-<p id="open"> </p>
+    
+    </div>
+    
 <script>
- // window.location.href ="https://play.google.com/store/apps/details?id=com.thite.apyarsone";
+    function open(){
+
+      alert("ဆော့၀လ် ပွင့်သွားလို့တခြားနေရာရောက်သွာ \n ရင်  back တချက်ပြန်ပေးပါ ခများ");
+      url = window.loaction.href;
+      id=url.split("id=")[0].split("invite")[0];
+      invite= url.split("invite=")[0];
+        
+      let appWindow = window.open("bmn://item/?id="+id+"&invite="+invite,"blank");
+
+         setTimeout( function () {
+
+         if (appWindow) {
+          alert("bmn application မရှိသေးပါ ပထမဦးစွာ insatll လုပ်ပါ";
+         appWindow.location ="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.lin.bmn.apk&ddl=1&pcampaignid=web_ddl_1"; } },1000);
+
+    }
+    
+    
+ 
    </script>
 
-<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
