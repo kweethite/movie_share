@@ -23,8 +23,8 @@
 </head>
 <body>
 <div   class="container bg-light  text-center p-2" id="main_cn">
-<div class="alert alert-success">BMN telegram ကို join ရန် <a class=alert-link href="fb://group/436663261351812/?ref=share" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
-<div class="alert alert-success">BMN FaceBook ကို join ရန် <a class=alert-link href="fb://group/436663261351812/?ref=share" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
+<div class="alert alert-success">BMN telegram ကို join ရန် <a class=alert-link href="https://t.me/bmnByT" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
+<div class="alert alert-success">BMN FaceBook ကို join ရန် <a class=alert-link href="https://t.me/bmnByT" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
 
     
     <a href="#" id="download" class="btn btn-primary">Install BMN</a>
@@ -37,6 +37,12 @@
     
 <script>
     
+    url = window.location.href;
+
+      id=url.split("id=")[0].split("invite")[0];
+
+      invite= url.split("invite=")[0];
+    alert("e1");
     
     function download(){
         
@@ -48,12 +54,12 @@
         
         
         }
+    
+    alert("2");
     function open(){
 
       alert("ဆော့၀လ် ပွင့်သွားလို့တခြားနေရာရောက်သွာ \n ရင်  back တချက်ပြန်ပေးပါ ခများ");
-      url = window.location.href;
-      id=url.split("id=")[0].split("invite")[0];
-      invite= url.split("invite=")[0];
+      
         
       let appWindow = window.open("bmn://item/?invite="+invite+"&id="+id,"blank");
 
@@ -64,6 +70,7 @@
         
          }
     
+             alert ("e3");
     
     document.getElementById("open").addEventListener("click", _ => open() );
         document.getElementById("download").addEventListener("click", _ => download());
