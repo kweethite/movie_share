@@ -22,49 +22,13 @@
    </style>
     
     
-    <script>
     
- var   url = "https://kweethite.github.io/movie_share/index.html?id=-NXBSxtYXKwE40jXykKwinvite=BlackHole";
-     alert(url);
- var     id=url.split("id=")[1].split("invite")[0];
-
- var     invite= url.split("invite=")[1];
-    alert("e1");
-    
-    function download(){
-        
-        alert (
-" ပထမဦးစွာ bmn \n telegram channel နဲ့  Facebook page ကို like လုပ်ထားပါ \n လက်ရှိ Bmn version တွင် error အနည်းငယ်ပါရှိ သောကြောင့် ပြဿနာတွေရဲ့ အဖြေများသိရှိရန် မဖြစ်မနေလုပ်ထားရန် လိုအပ်သည်");
-
-     
-   window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.lin.bmn.apk";
         
         
-        }
     
-    alert("2");
-    function open(){
+             
+    
 
-      alert("ဆော့၀လ် ပွင့်သွားလို့တခြားနေရာရောက်သွာ \n ရင်  back တချက်ပြန်ပေးပါ ခများ");
-      
-        
-      let appWindow = window.open("bmn://item/?invite="+invite+"&id="+id,"blank");
-
-         setTimeout( function () {
-
-         if (appWindow) {
-          alert("bmn application မရှိသေးပါ ပထမဦးစွာ insatll app နဲ့ ဆော့၀လ်တင်ပါ");
-        
-         }
-    
-             alert ("e3");
-    
-    document.getElementById("open").addEventListener("click", _ => open() );
-        document.getElementById("download").addEventListener("click", _ => download());
-                                                                                  
-</script>
-    
-    
     
     
     
@@ -72,6 +36,60 @@
     
 </head>
 <body>
+    
+    <script>
+
+  var url = "https://kweethite.github.io/movie_share/index.html?id=-NXBSxtYXKwE40jXykKwinvite=BlackHole";
+
+  alert(url);
+
+  var id = url.split("id=")[1].split("invite")[0];
+
+  var invite = url.split("invite=")[1];
+
+  alert("e1");
+
+  function download() {
+
+    alert(" ပထမဦးစွာ bmn \n telegram channel နဲ့  Facebook page ကို like လုပ်ထားပါ \n လက်ရှိ Bmn version တွင် error အနည်းငယ်ပါရှိ သောကြောင့် ပြဿနာတွေရဲ့ အဖြေများသိရှိရန် မဖြစ်မနေလုပ်ထားရန် လိုအပ်သည်");
+
+    window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.lin.bmn.apk";
+
+  }
+
+  alert("2");
+
+  function openInApp() {
+
+    alert("ဆော့၀်လို့တခြားနေရာရောက်သွာ \n ရင် back တချက်ပြန်ပေးပါ ခများ");
+
+    let appWindow = window.open("bmn://item/?invite=" + invite + "&id=" + id, "blank");
+
+    setTimeout(function () {
+
+      if (appWindow) {
+
+        alert("bmn application မရှိသေးပါ ပထမဦးစွာ insatll app နဲ့ ဆော့၀်တင်ပါ");
+
+      }
+
+    }, 3000);
+
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    document.getElementById("open").addEventListener("click", openInApp);
+
+    document.getElementById("download").addEventListener("click", download);
+
+  });
+
+</script>
+    
+    
+    
+    
 <div   class="container bg-light  text-center p-2" id="main_cn">
 <div class="alert alert-success">BMN telegram ကို join ရန် <a class=alert-link href="https://t.me/bmnByT" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
 <div class="alert alert-success">BMN FaceBook ကို join ရန် <a class=alert-link href="fb://page/100093436936142" class="alert-link">ဒီကိုနိပ်ပါ </a> </div>
